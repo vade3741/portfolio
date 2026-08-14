@@ -3,7 +3,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-import { FaBriefcase, FaTrophy, FaHammer, FaFileAlt, FaComments } from "react-icons/fa";
+import { FaBriefcase, FaTrophy, FaHammer, FaComments } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { HiOutlineSparkles } from "react-icons/hi";
 
@@ -16,7 +16,6 @@ export const sections = [
   { id: "projects", label: "Projects", icon: <AiOutlineFundProjectionScreen />, description: "Shipped builds and demos" },
   { id: "achievements", label: "Achievements", icon: <FaTrophy />, description: "Hackathons and recognition" },
   { id: "testimonials", label: "Testimonials", icon: <FaComments />, description: "What colleagues say" },
-  { id: "resume", label: "Resume", icon: <FaFileAlt />, description: "Download CV" },
   { id: "contact", label: "Contact", icon: <SiGmail />, description: "Get in touch" },
 ];
 

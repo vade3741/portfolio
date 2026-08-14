@@ -9,7 +9,6 @@ import CurrentlyBuilding from "./components/CurrentlyBuilding/CurrentlyBuilding"
 import Projects from "./components/Projects/Projects";
 import Acheivements from "./components/Acheivements/Acheivements";
 import Testimonials from "./components/Testimonials/Testimonials";
-import Resume from "./components/Resume/ResumeNew";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/footer/Footer";
 import "./style.css";
@@ -38,7 +37,6 @@ function App() {
         <section id="projects"><Projects /></section>
         <section id="achievements"><Acheivements /></section>
         <section id="testimonials"><Testimonials /></section>
-        <section id="resume"><Resume /></section>
         <section id="contact"><Contact /></section>
         <Footer />
       </div>
