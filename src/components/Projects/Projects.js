@@ -1,31 +1,22 @@
 import React from "react";
 import ProjectCard from "./ProjectCards";
 import { RevealWrapper } from "../../hooks/useScrollReveal";
-import reservet from "../../Assets/reservet.png";
-import jira from "../../Assets/jira.png";
-import yelp from "../../Assets/yelp.png";
 
 const projects = [
   {
-    imgPath: jira,
-    title: "AI Integration in Jira",
-    description: "Built comprehensive unit tests with JUnit and Mockito in Kotlin, elevated SonarQube code coverage from 30% to 80%, and integrated AI capabilities into Jira Service Management using Workato for enhanced automation.",
-    demoLink: "https://drive.google.com/file/d/1ZfDbZqqGrkVUaLIuRSeoM9n5jckA6de3/view?usp=drive_link",
-    tags: ["Kotlin", "JUnit", "Workato", "Jira"],
-  },
-  {
-    imgPath: yelp,
-    title: "Yelpcamp",
-    description: "Full-stack campground review app using MVC architecture with NodeJS, MongoDB, and Express. Features CRUD for campgrounds and reviews, PassportJS authentication, and deployed on Vercel.",
-    demoLink: "https://yelp-camp-brown.vercel.app/",
-    tags: ["Node.js", "MongoDB", "Express", "PassportJS"],
-  },
-  {
-    imgPath: reservet,
-    title: "Reservet",
-    description: "SIH team project — an e-ticket portal for tourism that can increase tourism by 70%. Built with MERN stack, Firebase authentication, Front-end Redux data flow, and Razorpay API for payments.",
-    demoLink: "https://reservet.netlify.app/",
-    tags: ["React", "Node.js", "Firebase", "Redux", "Razorpay"],
+    title: "GitSense AI",
+    description:
+      "A production-grade AI platform for understanding, indexing, and reasoning over large-scale software repositories — enabling natural language interaction, architectural insights, dependency analysis, documentation generation, and intelligent code discovery.",
+    demoLink: "https://gitsense.dharabindal.com/",
+    tags: [
+      "Multi-Agent RAG",
+      "Graph RAG",
+      "MCP Tools",
+      "FastAPI",
+      "Qdrant",
+      "Docker",
+      "Kubernetes",
+    ],
   },
 ];
 
@@ -40,7 +31,7 @@ function Projects() {
           <p className="text-gray-500 mb-12">A selection of things I've built</p>
         </RevealWrapper>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="max-w-xl mx-auto">
           {projects.map((project, i) => (
             <RevealWrapper key={i} delay={i * 120}>
               <ProjectCard {...project} />
