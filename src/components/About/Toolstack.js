@@ -1,16 +1,27 @@
 import React from "react";
-import { SiLinux, SiVisualstudiocode, SiPostman, SiVercel, SiJupyter, SiMacos } from "react-icons/si";
+import { HiShare } from "react-icons/hi";
+import {
+  SiLinux,
+  SiPostman,
+  SiVercel,
+  SiJupyter,
+  SiDocker,
+  SiKubernetes,
+  SiAmazonaws,
+} from "react-icons/si";
 import { DiGit, DiGithubBadge } from "react-icons/di";
 
 const tools = [
   { icon: <SiLinux />, name: "Linux" },
-  { icon: <SiVisualstudiocode />, name: "VS Code" },
+  { icon: <HiShare />, name: "n8n" },
   { icon: <SiJupyter />, name: "Jupyter" },
   { icon: <DiGit />, name: "Git" },
   { icon: <DiGithubBadge />, name: "GitHub" },
   { icon: <SiPostman />, name: "Postman" },
   { icon: <SiVercel />, name: "Vercel" },
-  { icon: <SiMacos />, name: "macOS" },
+  { icon: <SiDocker />, name: "Docker" },
+  { icon: <SiKubernetes />, name: "Kubernetes" },
+  { icon: <SiAmazonaws />, name: "AWS" },
 ];
 
 function Toolstack() {

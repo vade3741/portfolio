@@ -5,9 +5,9 @@ import { RevealWrapper } from "../../hooks/useScrollReveal";
 
 const stats = [
   { value: "1.5+", label: "Years Experience" },
-  { value: "3", label: "Companies" },
+  { value: "20+", label: "Projects Shipped" },
   { value: "500+", label: "DSA Problems" },
-  { value: "8.61", label: "CGPA" },
+  { value: "8.27", label: "CGPA" },
 ];
 
 function About() {
@@ -25,13 +25,13 @@ function About() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 mb-20">
           <RevealWrapper delay={100} className="lg:col-span-3">
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
-              I'm Dhara Bindal, a Software Engineer at <span className="text-accent font-medium">LG Ad Solutions</span> in Bangalore, 
-              where I build scalable backend systems and integrate programmatic advertising pipelines. 
-              I graduated from Jabalpur Engineering College with a B.Tech in Computer Science (CGPA 8.61/10).
+              I'm Saransh Jain, a Software Engineer at <span className="text-accent font-medium">Mindtickle</span> in Pune, 
+              where I build scalable backend systems in Go and Ruby . 
+              I graduated from IIIT Nagpur with a B.Tech in Computer Science (CGPA 8.27/10).
             </p>
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
-              Previously, I interned at <span className="text-accent font-medium">Sharechat</span> and <span className="text-accent font-medium">Atlassian</span>, 
-              where I worked on automation, backend services in Go and Kotlin, and enhanced code quality through testing and CI/CD integration.
+              Previously, I interned at <span className="text-accent font-medium">Mindtickle</span>, 
+              where I worked on automation, backend services in Node and Express, and enhanced code quality through testing and CI/CD integration.
             </p>
             <p className="text-gray-500 text-base italic border-l-2 border-accent/30 pl-4">
               "It's never too late to be what you might've been."

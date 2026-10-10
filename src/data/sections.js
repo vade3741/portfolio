@@ -3,7 +3,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-import { FaBriefcase, FaTrophy, FaComments } from "react-icons/fa";
+import { FaBriefcase, FaTrophy } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { HiOutlineSparkles } from "react-icons/hi";
 
@@ -14,13 +14,13 @@ export const sections = [
   { id: "experience", label: "Experience", icon: <FaBriefcase />, description: "Roles, impact, and growth" },
   { id: "projects", label: "Projects", icon: <AiOutlineFundProjectionScreen />, description: "Shipped builds and demos" },
   { id: "achievements", label: "Achievements", icon: <FaTrophy />, description: "Hackathons and recognition" },
-  { id: "testimonials", label: "Testimonials", icon: <FaComments />, description: "What colleagues say" },
   { id: "contact", label: "Contact", icon: <SiGmail />, description: "Get in touch" },
 ];
 
 export const primaryNav = [
-  { id: "home", label: "Home" },
-  { id: "explore", label: "Explore" },
+  { id: "about", label: "About" },
+  { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
   { id: "contact", label: "Contact" },
 ];
 

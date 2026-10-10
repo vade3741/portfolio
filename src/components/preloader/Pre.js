@@ -9,7 +9,7 @@ function Pre(props) {
     >
       <div className="flex flex-col items-center gap-4">
         <div className="w-12 h-12 border-2 border-accent border-t-transparent rounded-full animate-spin" />
-        <span className="text-accent font-serif text-xl tracking-widest">DB</span>
+        <span className="text-accent font-serif text-xl tracking-widest">Saransh Jain</span>
       </div>
     </div>
   );

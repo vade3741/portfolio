@@ -1,19 +1,16 @@
-import React from "react";
 import ProjectCard from "./ProjectCards";
 import { RevealWrapper } from "../../hooks/useScrollReveal";
 
 const projects = [
   {
-    title: "GitSense AI",
+    title: "Ms Dynamics Integration for Digital Sales Room",
     description:
-      "A production-grade AI platform for understanding, indexing, and reasoning over large-scale software repositories — enabling natural language interaction, architectural insights, dependency analysis, documentation generation, and intelligent code discovery.",
-    demoLink: "https://gitsense.dharabindal.com/",
+      "Based on the Crm opportunity data, we auto-generate draft sales rooms for the Digital Sales Room (DSR) product. This integration supports Microsoft Dynamics CRM, enabling seamless creation of sales rooms based on CRM data of users contacting and deal.",
     tags: [
-      "Multi-Agent RAG",
-      "Graph RAG",
+      "Kafka",
+      "Go",
       "MCP Tools",
-      "FastAPI",
-      "Qdrant",
+      "Ruby",
       "Docker",
       "Kubernetes",
     ],

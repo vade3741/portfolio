@@ -1,7 +1,21 @@
 import React from "react";
 import { CgCPlusPlus } from "react-icons/cg";
-import { DiJavascript1, DiReact, DiNodejs, DiPython } from "react-icons/di";
-import { SiFirebase, SiMongodb, SiExpress, SiGo, SiApachekafka, SiKubernetes, SiDocker, SiRedis, SiAmazonaws } from "react-icons/si";
+import { DiJavascript1, DiReact, DiNodejs, DiPython, DiJava } from "react-icons/di";
+import { HiLink, HiShare } from "react-icons/hi";
+import {
+  SiFirebase,
+  SiMongodb,
+  SiExpress,
+  SiGo,
+  SiApachekafka,
+  SiRedis,
+  SiSpringboot,
+  SiRuby,
+  SiC,
+  SiGraphql,
+  SiRabbitmq,
+  SiTypescript,
+} from "react-icons/si";
 
 const skills = [
   { icon: <CgCPlusPlus />, name: "C/C++" },
@@ -15,9 +29,15 @@ const skills = [
   { icon: <SiFirebase />, name: "Firebase" },
   { icon: <SiApachekafka />, name: "Kafka" },
   { icon: <SiRedis />, name: "Redis" },
-  { icon: <SiDocker />, name: "Docker" },
-  { icon: <SiKubernetes />, name: "Kubernetes" },
-  { icon: <SiAmazonaws />, name: "AWS" },
+  { icon: <SiSpringboot />, name: "Spring Boot" },
+  { icon: <SiRuby />, name: "Ruby" },
+  { icon: <DiJava />, name: "Java" },
+  { icon: <SiC />, name: "C" },
+  { icon: <SiGraphql />, name: "GraphQL" },
+  { icon: <HiLink />, name: "LangChain" },
+  { icon: <HiShare />, name: "LangGraph" },
+  { icon: <SiRabbitmq />, name: "RabbitMQ" },
+  { icon: <SiTypescript />, name: "TypeScript" },
 ];
 
 function Techstack() {

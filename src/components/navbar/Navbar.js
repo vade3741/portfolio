@@ -42,41 +42,46 @@ function NavBar() {
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        className={`fixed top-0 h-16 w-full z-50 border-b border-[#342e52] transition-all duration-300 ${
           scrolled
             ? "bg-dark-900/95 backdrop-blur-md shadow-lg shadow-black/20"
-            : "bg-transparent"
+            : "bg-dark-900/95"
         }`}
       >
-        <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-[1fr_auto_1fr] items-center h-16">
           <button
             onClick={() => scrollTo("home")}
-            className="text-accent font-serif text-2xl font-semibold hover:text-accent-light transition-colors bg-transparent border-none cursor-pointer"
+            aria-label="Go to home"
+            className="justify-self-start text-[#b9a5ff] font-serif text-2xl font-semibold hover:text-white transition-colors bg-transparent border-none cursor-pointer"
           >
-            DB
+            SJ.
           </button>
 
-          <div className="flex items-center gap-2 sm:gap-4">
+          <div className="hidden md:flex items-center justify-center gap-5 lg:gap-8">
             {primaryNav.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollTo(link.id)}
-                className={`text-sm tracking-wide transition-colors bg-transparent border-none cursor-pointer px-2 py-1 ${
+                aria-current={activeSection === link.id ? "location" : undefined}
+                className={`text-sm tracking-wide transition-colors bg-transparent border-none cursor-pointer px-1 py-1 ${
                   activeSection === link.id
-                    ? "text-accent"
-                    : "text-gray-400 hover:text-accent-light"
+                    ? "text-[#b9a5ff]"
+                    : "text-gray-400 hover:text-[#b9a5ff]"
                 }`}
               >
                 {link.label}
               </button>
             ))}
+          </div>
 
+          <div className="justify-self-end">
             <button
               onClick={() => setMenuOpen(true)}
-              className="ml-1 sm:ml-2 flex items-center gap-2 px-3 py-1.5 rounded-full border border-dark-600 text-gray-400 hover:text-accent hover:border-accent/40 transition-all bg-transparent cursor-pointer text-sm"
+              aria-label="Open navigation menu"
+              className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-dark-600 text-gray-300 hover:text-[#b9a5ff] hover:border-[#b9a5ff]/50 transition-all bg-dark-800/70 cursor-pointer text-sm"
             >
               <HiMenu className="text-base" />
-              <span className="hidden sm:inline">Menu</span>
+              <span>Menu</span>
             </button>
           </div>
         </div>

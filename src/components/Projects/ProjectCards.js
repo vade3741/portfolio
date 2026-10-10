@@ -1,6 +1,5 @@
 import React from "react";
 import { CgWebsite } from "react-icons/cg";
-import { FaRobot } from "react-icons/fa";
 
 function ProjectCards({ imgPath, title, description, demoLink, tags }) {
   return (
@@ -9,18 +8,38 @@ function ProjectCards({ imgPath, title, description, demoLink, tags }) {
         {imgPath ? (
           <img src={imgPath} alt={title} className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" />
         ) : (
-          <div
-            className="w-full h-full flex flex-col items-center justify-center gap-3"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(201,168,108,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,108,0.08) 1px, transparent 1px)",
-              backgroundSize: "24px 24px",
-            }}
-          >
-            <div className="w-16 h-16 rounded-2xl bg-accent/10 border border-accent/30 flex items-center justify-center text-accent text-3xl shadow-[0_0_30px_rgba(201,168,108,0.15)]">
-              <FaRobot />
+          <div className="w-full h-full flex items-center justify-center p-5 sm:p-8 bg-gradient-to-br from-[#17132d] via-dark-800 to-dark-900">
+            <div className="w-full max-w-sm rounded-xl border border-dark-500 bg-dark-900/90 p-4 sm:p-5 shadow-2xl shadow-black/30">
+              <div className="flex items-center justify-between gap-3 border-b border-dark-600 pb-3">
+                <div className="flex items-center gap-3">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent/10 text-accent text-xl">
+                    <CgWebsite aria-hidden="true" />
+                  </span>
+                  <div>
+                    <p className="text-white text-sm font-medium">Digital Sales Room</p>
+                    <p className="text-gray-500 text-xs">Opportunity workspace</p>
+                  </div>
+                </div>
+                <span className="shrink-0 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-2 py-1 text-[10px] text-emerald-300">
+                  CRM synced
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 gap-3 pt-4">
+                <div className="rounded-lg border border-dark-600 bg-dark-800 p-3">
+                  <p className="text-gray-500 text-[10px] uppercase tracking-wider">Opportunity</p>
+                  <p className="mt-2 text-gray-200 text-xs font-medium">Enterprise deal</p>
+                  <p className="mt-1 text-accent text-xs">Microsoft Dynamics</p>
+                </div>
+                <div className="rounded-lg border border-dark-600 bg-dark-800 p-3">
+                  <p className="text-gray-500 text-[10px] uppercase tracking-wider">Shared room</p>
+                  <p className="mt-2 text-gray-200 text-xs font-medium">Draft created</p>
+                  <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-dark-600">
+                    <div className="h-full w-3/4 rounded-full bg-accent/70" />
+                  </div>
+                </div>
+              </div>
             </div>
-            <span className="text-accent text-sm font-medium tracking-[0.2em] uppercase">GitSense AI</span>
           </div>
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-dark-800/60 to-transparent" />
@@ -35,10 +54,6 @@ function ProjectCards({ imgPath, title, description, demoLink, tags }) {
             ))}
           </div>
         )}
-        <a href={demoLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-accent text-sm hover:text-accent-light transition-colors no-underline group/link">
-          <CgWebsite />
-          <span className="group-hover/link:translate-x-1 transition-transform">View Project →</span>
-        </a>
       </div>
     </div>
   );

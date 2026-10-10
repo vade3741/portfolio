@@ -3,41 +3,31 @@ import { RevealWrapper } from "../../hooks/useScrollReveal";
 
 const experiences = [
   {
-    company: "LG Ad Solutions",
+    company: "Mindtickle",
     role: "Software Engineer",
-    period: "December 2024 — Present",
-    location: "Bangalore",
+    period: "June 2025 — September 2026",
+    location: "Pune",
     highlights: [
-      "Integrated Spring Serve Tiles as a new programmatic partner, implementing request/response connectors with unit and integration tests to open up new revenue opportunities and grow programmatic demand, powering a $100K deal",
-      "Revamped inventory filtering in SSP portal with Go-based backend APIs and interactive graph visualization, boosting data clarity, operational visibility, and decision efficiency by 25%",
-      "Developed supply enrichment logic to augment SSAI ad requests with external server, improving metadata accuracy for better ad targeting and segmentation; boosted fill rate by 15% and reduced request errors by 20%",
-      "Designed LLD for scanned creative fires and optimized PagerDuty incident management by refining schedules, escalation policies, and subscription rules based on severity, guiding deep system-level insight",
+      "Integrated Auto Room Creation feature for the Digital Sales Room (DSR) product, where we auto-generated draft sales rooms based on CRM opportunity data.",
+      "Developed content visibility (hide/unhide) controls for Digital Sales Room using React/TypeScript and backend RPC validation; automated regression testing with Playwright via a reusable MCP test server.",
+      "Integrated CRM abstraction layer supporting Microsoft Dynamics from platform on DSR: gRPC/Protobuf contracts and Go Kafka workers for real-time deal, contact, and account ingestion.",
+      "Shipped deep linking for sales room sections/assets, migrated the asset picker from iframe to a Module Federation micro-frontend architecture.",
+      "Developed EJS email templates and notification payloads for the Notification Hub, integrating with orchestration services via RabbitMQ to deliver dynamic, event-driven emails.",
+      "Built internal n8n automations for product managers to reduce manual workflows and improve team productivity.",
     ],
-    tech: "Golang, Python, Apache Airflow (DAGs), Kafka, Redis, PagerDuty",
+    tech: "Golang, Ruby, Rabbit MQ, Kafka, Redis, CRM, MySQL, React, GraphQL",
   },
   {
-    company: "Sharechat",
+    company: "Mindtickle",
     role: "Software Engineer Intern",
-    period: "June 2024 — October 2024",
-    location: "Bangalore",
+    period: "June 2024 — June 2025",
+    location: "Pune",
     highlights: [
-      "Automated the offline report generation for 5+ queries needed by the finance team by writing a cron job in Golang",
-      "Implemented frontend automation for MOJ payments using Maestro covering top 10 UI flows",
-      "Tested CRON - payout report job in Golang with the Testify library, integrated SonarQube, raised coverage from 0% to 75% by adding 100+ tests and incorporated error handling to cover failure scenarios",
+      "Developed Clone Settings and Export Settings features with JavaScript and Node.js, automating configuration replication and exports across organizations.",
+      "Refactored 40+ gRPC services in Go and Java to use Google's standard gRPC health-check protocol, improving interoperability and service monitoring.",
+      "Built an end-to-end customer sentiment analysis pipeline to analyze call transcripts, extracting insights into customer feedback, feature adoption, and product sentiment"
     ],
-    tech: "Golang, Maestro, SonarQube, Testify",
-  },
-  {
-    company: "Atlassian",
-    role: "Software Engineer Intern",
-    period: "June 2023 — July 2023",
-    location: "Remote",
-    highlights: [
-      "In Kotlin, performed unit testing using JUnit and Mockito, crafting 5+ test cases to cover all edge scenarios",
-      "Elevated SonarQube integration, augmenting code coverage from 30% to 80%, resulting in significant improvement",
-      "Utilized Workato to integrate AI into Jira Service Management project, enhancing its functionality and automation",
-    ],
-    tech: "Kotlin, JUnit, Mockito, Workato, Jira Service Management",
+    tech: "Node, Express, Apache Airflow (DAGs), Python",
   },
 ];
 

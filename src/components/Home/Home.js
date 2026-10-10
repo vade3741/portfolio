@@ -15,6 +15,13 @@ function Home() {
     <div className="min-h-screen flex items-center justify-center bg-dark-900 relative overflow-hidden">
       <div className="gradient-orb absolute top-1/4 -right-32 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[100px]" />
       <div className="gradient-orb-2 absolute bottom-1/4 -left-32 w-[400px] h-[400px] bg-accent/3 rounded-full blur-[80px]" />
+      <div className="hero-spotlight" aria-hidden="true" />
+      <div className="hero-lamp" aria-hidden="true">
+        <span className="hero-lamp-cord" />
+        <span className="hero-lamp-shade" />
+        <span className="hero-lamp-joint" />
+        <span className="hero-lamp-bulb" />
+      </div>
 
       <div
         className="absolute inset-0 opacity-[0.02]"
@@ -30,7 +37,7 @@ function Home() {
         </p>
 
         <h1 className="hero-title font-serif text-5xl md:text-7xl lg:text-8xl text-white font-medium leading-tight mb-6">
-          Hello, I'm Dhara —
+          Hello, I'm Saransh —
           <br />
           <span className="text-accent">
             <Type />
@@ -38,14 +45,16 @@ function Home() {
         </h1>
 
         <p className="hero-subtitle text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-          Software Engineer at LG Ad Solutions, building scalable systems with Go, Python, and cloud-native technologies.
+          Software Engineer at Mindtickle, building scalable systems 
+          <br />
+         with Go, Springboot, Ruby, Python and cloud-native technologies.
         </p>
 
         <div className="hero-socials flex items-center justify-center gap-4 mb-12">
           {[
-            { href: "https://github.com/bindaldhara", icon: <AiFillGithub size={20} />, label: "GitHub" },
-            { href: "https://www.linkedin.com/in/dhara-bindal-48996a1bb/", icon: <FaLinkedinIn size={18} />, label: "LinkedIn" },
-            { href: "mailto:dharabindal@gmail.com", icon: <SiGmail size={18} />, label: "Email" },
+            { href: "https://github.com/saranshjain", icon: <AiFillGithub size={20} />, label: "GitHub" },
+            { href: "https://www.linkedin.com/in/saransh-jain-48996a1bb/", icon: <FaLinkedinIn size={18} />, label: "LinkedIn" },
+            { href: "mailto:saranshjain137@gmail.com", icon: <SiGmail size={18} />, label: "Email" },
           ].map((social) => (
             <a
               key={social.label}

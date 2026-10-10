@@ -7,7 +7,6 @@ import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
 import Acheivements from "./components/Acheivements/Acheivements";
-import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/footer/Footer";
 import "./App.css";
@@ -33,7 +32,6 @@ function App() {
         <section id="experience"><Experience /></section>
         <section id="projects"><Projects /></section>
         <section id="achievements"><Acheivements /></section>
-        <section id="testimonials"><Testimonials /></section>
         <section id="contact"><Contact /></section>
         <Footer />
       </div>

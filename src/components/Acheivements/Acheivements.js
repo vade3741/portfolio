@@ -1,13 +1,10 @@
 import React from "react";
-import { FaTrophy, FaCode, FaGithub, FaGraduationCap, FaBriefcase } from "react-icons/fa";
+import { FaCode, FaBriefcase } from "react-icons/fa";
 import { RevealWrapper } from "../../hooks/useScrollReveal";
 
 const achievements = [
-  { icon: <FaBriefcase />, title: "Software Engineer Intern — Atlassian & Sharechat", description: "Fortunate to secure internships as a Software Engineer at Atlassian and Sharechat, gaining hands-on experience and contributing to their projects." },
-  { icon: <FaTrophy />, title: "SIH 2022 National Runner-up", description: "Smart India Hackathon 2022 National Runner-up. Out of 125 submissions across India on our problem statement, we were among the top 5 teams." },
+  { icon: <FaBriefcase />, title: "Software Engineer Intern — Mindtickle", description: "Fortunate to secure internships as a Software Engineer at Mindtickle, gaining hands-on experience and contributing to their projects." },
   { icon: <FaCode />, title: "Competitive Programming", description: "Highest rating of 1635 at Leetcode, with 500+ DSA questions solved. Highest rating of 1100 at Codeforces. Active participant on GeeksForGeeks." },
-  { icon: <FaGithub />, title: "HacktoberFest 2022 — Open Source", description: "Open Source Contributor in HacktoberFest 2022, merged more than 15 pull requests across multiple repositories." },
-  { icon: <FaGraduationCap />, title: "MMVY Scholarship Recipient", description: "Recipient of the MMVY Scholarship for academic excellence throughout undergraduate studies." },
 ];
 
 function Acheivements() {

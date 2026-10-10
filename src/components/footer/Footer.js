@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="bg-dark-800 border-t border-dark-600">
       <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Dhara Bindal. All rights reserved.</p>
+        <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Saransh Jain. All rights reserved.</p>
         <div className="flex items-center gap-4">
           {[
             { href: "https://github.com/bindaldhara", icon: <AiFillGithub size={20} /> },

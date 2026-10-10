@@ -8,3 +8,91 @@
   font-size: inherit !important;
   color: #c9a86c !important;
 }
+
+.hero-spotlight {
+  position: absolute;
+  z-index: 1;
+  top: 8rem;
+  left: calc(50% + 0.65rem);
+  width: min(34rem, 90vw);
+  height: min(42rem, 78vh);
+  transform: translateX(-50%) rotate(-9deg);
+  background: radial-gradient(
+    ellipse 48% 82% at 50% 0%,
+    rgba(174, 151, 255, 0.16) 0%,
+    rgba(150, 126, 225, 0.1) 35%,
+    rgba(126, 102, 205, 0.045) 63%,
+    rgba(126, 102, 205, 0) 100%
+  );
+  filter: blur(2.25rem);
+  pointer-events: none;
+}
+
+.hero-lamp {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+  width: 5.5rem;
+  height: 8.5rem;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.hero-lamp-cord {
+  position: absolute;
+  top: 1.5rem;
+  left: 105%;
+  width: 0.2rem;
+  height: 6.4rem;
+  transform: rotate(28deg);
+  transform-origin: top center;
+  background: linear-gradient(90deg, #31313a, #16161e 65%, #52525a);
+}
+
+.hero-lamp-shade {
+  position: absolute;
+  top: 5.75rem;
+  left: 0.65rem;
+  width: 4.25rem;
+  height: 3.1rem;
+  transform: rotate(14deg);
+  border-radius: 52% 48% 40% 40%;
+  background: radial-gradient(ellipse at 58% 30%, #45454a 0%, #1a1a20 55%, #09090d 100%);
+  box-shadow: 0 0.7rem 1.8rem rgba(0, 0, 0, 0.35);
+}
+
+.hero-lamp-joint {
+  position: absolute;
+  top: 5.35rem;
+  left: 3.45rem;
+  width: 0.5rem;
+  height: 0.8rem;
+  transform: rotate(28deg);
+  border-radius: 0.2rem;
+  background: linear-gradient(90deg, #38383e, #14141a 65%, #4b4b52);
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+
+.hero-lamp-bulb {
+  position: absolute;
+  top: 7.55rem;
+  left: 0.5rem;
+  width: 5rem;
+  height: 0.8rem;
+  transform: rotate(24deg);
+  border-radius: 50%;
+  background: linear-gradient(180deg, #fff 0%, #e8e4ff 70%, #c7bbff 100%);
+  box-shadow: 0 0 1.5rem rgba(198, 182, 255, 0.7);
+}
+
+@media (max-width: 640px) {
+  .hero-spotlight {
+    height: 65vh;
+  }
+
+  .hero-lamp {
+    transform: translateX(-50%) scale(0.82);
+    transform-origin: top center;
+  }
+}
